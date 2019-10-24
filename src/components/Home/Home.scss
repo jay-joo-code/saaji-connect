@@ -71,5 +71,132 @@ $blue: #000080;
 }
 
 .functions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 128, .15);
+    padding: 4rem 0;
     
+    .functions-inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+        .card-wrapper {
+            padding: 2rem;
+            max-width: 15%;
+            
+            .card {
+                background-color: white;
+                padding: 2rem;
+                opacity: .8;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .18);
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                .fas {
+                    background-color: rgba(0, 0, 128, .8);
+                    padding: 1rem;
+                    border-radius: 50%;
+                    color: white;
+                    margin-bottom: 1rem;
+                }
+                
+                h3 {
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                }
+                
+                .hr-navy {
+                    width: 60%;
+                    border-bottom: 5px solid rgba(0, 0, 128, 1);
+                    margin: 1rem 0;
+                }
+                
+                p {
+                    text-align: center;
+                    font-weight: bold;
+                    opacity: .7;
+                }
+            }    
+        }
+    }
+}
+
+.checklist {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6rem;
+    
+    .graphic {
+        max-width: 60%;
+    }
+    
+    .checklist-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 1;
+        
+        .checklist-inner {
+            // background-color: rgba(0, 0, 0, .05);
+            // box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem;
+            border-radius: 10px;
+            font-weight: bold;
+            opacity: .8;
+            
+            h3 {
+                font-size: 3rem;
+                color: $blue;
+                margin: 1rem 0;
+            }
+            
+            p {
+                margin: 1rem 0;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                
+                .fas {
+                    color: rgba(0, 0, 128, 1);
+                    font-size: 1.5em;
+                }
+                
+                span {
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $blue;
+    opacity: .7;
+    
+    .footer-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            font-weight: 100;
+            color: white;
+        }
+    }
 }

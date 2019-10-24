@@ -15,9 +15,13 @@
     "redux-thunk": "^2.3.0",
     "typescript": "^3.6.4"
   },
+  "engines": {
+    "npm": "6.4.1",
+    "node": "8.16.0"
+  },
   "scripts": {
     "start": "HTTPS=true && react-scripts start",
-    "dev": "react-scripts start",
+    "dev": "NODE_ENV=development && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

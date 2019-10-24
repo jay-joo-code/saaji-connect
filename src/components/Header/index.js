@@ -11,7 +11,6 @@ class Header extends React.Component {
     render() {
         return (
             <div className='container header'>
-                <h1><span>싸지 커넥트</span></h1>
             </div>
             )
     }
