@@ -4,7 +4,11 @@ $blue: #000080;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15rem 1rem;
+    padding: 4rem 1rem;
+    
+    @media screen and (min-width: 768px) {
+        padding: 15rem 1rem;
+    }
 }
 
 .home {
