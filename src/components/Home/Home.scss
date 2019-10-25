@@ -4,7 +4,7 @@ $blue: #000080;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0;
+    padding: 5rem 1rem;
 }
 
 .home {
@@ -25,19 +25,41 @@ $blue: #000080;
         opacity: .8;
         
         h2 {
-            font-size: 4rem;
-            line-height: .5rem;
+            font-size: 3rem;
+            // line-height: .5rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
             
+            @media screen and (min-width: 768px) {
+                justify-content: flex-start;
+                font-size: 4rem;
+            }
         }
         
         h3 {
             font-size: 1.5rem;
+            text-align: center;
         }
         
         p {
-            line-height: .7rem;
+            // line-height: .7rem;
             font-weight: bold;
             opacity: .7;
+            text-align: center;
+            
+            @media screen and (min-width: 768px) {
+                text-align: start;
+            }
+        }
+        
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            
+            @media screen and (min-width: 768px) {
+                justify-content: flex-start;
+            }
         }
         
         a {
@@ -50,7 +72,7 @@ $blue: #000080;
             margin-top: 1rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
             cursor: pointer;
-            line-height: 4rem;
+            // line-height: 4rem;
             text-decoration: none;
         }
         
@@ -71,7 +93,7 @@ $blue: #000080;
 }
 
 .functions {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +109,11 @@ $blue: #000080;
         
         .card-wrapper {
             padding: 2rem;
-            max-width: 15%;
+            width: 100%;
+            
+            @media screen and (min-width: 768px) {
+                max-width: 15%;
+            }
             
             .card {
                 background-color: white;
@@ -134,19 +160,25 @@ $blue: #000080;
     width: 100%;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 6rem;
+    
+    
+    .checklist-container {
+        
+    }
     
     .graphic {
-        max-width: 60%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .checklist-wrapper {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        flex-grow: 1;
+        // flex-grow: 1;
         
         .checklist-inner {
             // background-color: rgba(0, 0, 0, .05);
@@ -171,6 +203,7 @@ $blue: #000080;
                 display: flex;
                 align-items: center;
                 font-weight: bold;
+                opacity: .8;
                 
                 .fas {
                     color: rgba(0, 0, 128, 1);

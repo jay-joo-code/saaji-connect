@@ -22,7 +22,9 @@ class Home extends React.Component {
                                 <h3>군대 사이버정보지식방 <span>구글</span>, <span>유투브</span> 접속 프로그램</h3>
                                 <p>유투브, 구글, 지메일, 파이어베이스 싸지방에서 안되던 사이트</p>
                                 <p>클릭 하나로 간편한 접속!</p>
-                                <a href={SaajiConnect} download>다운로드</a>
+                                <div className='button-wrapper'>
+                                    <a href={SaajiConnect} download>다운로드</a>
+                                </div>
                             </div>
                         </div>
                         <div className='container graphic'>
