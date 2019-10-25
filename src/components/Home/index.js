@@ -27,7 +27,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='container graphic'>
+                        <div className='graphic'>
                             <img src={HomeImage} />
                         </div>
                     </div>
@@ -61,17 +61,19 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className='container checklist'>
-                    <div className='graphic'>
-                        <img src={CodeImage} />
-                    </div>
-                    <div className='checklist-wrapper'>
-                        <div className='checklist-inner'>
-                            <h3>핵심 기능</h3>
-                            <p><i className="fas fa-check-circle"></i><span>구글, 유투브와 같은 기본적인 사이트 접속</span></p>
-                            <p><i className="fas fa-check-circle"></i><span>구글 클라우드, 구글 드라이브 접속</span></p>
-                            <p><i className="fas fa-check-circle"></i><span>파이어베이스, 깃헙와 같은 개발자 사이트 접속</span></p>
-                            <p><i className="fas fa-check-circle"></i><span>UI 없는 간결하고 효율적인 프로그램</span></p>
-                            <p><i className="fas fa-check-circle"></i><span>다운로드 파일 및 파일 기록 자동 삭제</span></p>
+                    <div className='container checklist-container'>
+                        <div className='graphic'>
+                            <img src={CodeImage} />
+                        </div>
+                        <div className='checklist-wrapper'>
+                            <div className='checklist-inner'>
+                                <h3>핵심 기능</h3>
+                                <p><i className="fas fa-check-circle"></i><span>구글, 유투브와 같은 기본적인 사이트 접속</span></p>
+                                <p><i className="fas fa-check-circle"></i><span>구글 클라우드, 구글 드라이브 접속</span></p>
+                                <p><i className="fas fa-check-circle"></i><span>파이어베이스, 깃헙와 같은 개발자 사이트 접속</span></p>
+                                <p><i className="fas fa-check-circle"></i><span>UI 없는 간결하고 효율적인 프로그램</span></p>
+                                <p><i className="fas fa-check-circle"></i><span>다운로드 파일 및 파일 기록 자동 삭제</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
