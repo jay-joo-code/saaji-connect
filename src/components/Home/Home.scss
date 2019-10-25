@@ -84,7 +84,11 @@ $blue: #000080;
     .graphic {
         display: flex;
         justify-content: center;
-        max-width: 100vw;
+        width: 100vw;
+        
+        img {
+            width: 100%;
+        }
         
         @media screen and (min-width: 768px) {
             max-width: 50%;
