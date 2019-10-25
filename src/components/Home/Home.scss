@@ -83,7 +83,6 @@ $blue: #000080;
     
     .graphic {
         display: flex;
-        flex-direction: row;
         justify-content: start;
         max-width: 100%;
         
@@ -163,11 +162,6 @@ $blue: #000080;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
-    
-    .checklist-container {
-        
-    }
     
     .graphic {
         max-width: 100%;
