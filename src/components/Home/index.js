@@ -27,7 +27,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='graphic'>
+                        <div className='container graphic'>
                             <img src={HomeImage} />
                         </div>
                     </div>
@@ -62,7 +62,7 @@ class Home extends React.Component {
                 </div>
                 <div className='container checklist'>
                     <div className='container checklist-container'>
-                        <div className='graphic'>
+                        <div className='container graphic'>
                             <img src={CodeImage} />
                         </div>
                         <div className='checklist-wrapper'>

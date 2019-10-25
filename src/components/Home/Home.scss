@@ -9,8 +9,8 @@ $blue: #000080;
 
 .home {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    
     
     @media screen and (min-width: 768px) {
         // padding-left: 10rem;
@@ -83,7 +83,7 @@ $blue: #000080;
     
     .graphic {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         max-width: 100%;
         
         @media screen and (min-width: 768px) {
@@ -161,12 +161,21 @@ $blue: #000080;
     background-color: white;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    
+    .checklist-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     
     .graphic {
         max-width: 100%;
         display: flex;
         justify-content: center;
+        
+        @media screen and (min-width: 768px) {
+            max-width: 50%;
+        }
     }
     
     .checklist-wrapper {
