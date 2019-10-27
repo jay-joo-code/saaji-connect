@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 // import { increment } from 'src/redux/actions/counter';
-import './Home.scss'
+import './Home.scss';
 import HomeImage from './resized-landing-80.jpg';
 import CodeImage from './code.jpg';
 import SaajiConnect from './SaajiConnect.bat';
