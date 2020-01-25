@@ -79,7 +79,7 @@ class Home extends React.Component {
                 </div>
                 <div className='container footer'>
                     <div className='container footer-inner'>
-                        <p>Made with ❤ by Jae</p>
+                        <p>All rights reserved. SaajiConnect</p>
                     </div>
                 </div>
             </div>
