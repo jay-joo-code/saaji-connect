@@ -1,10 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
-// import { increment } from 'src/redux/actions/counter';
 import './Home.scss';
 import HomeImage from './resized-landing-80.jpg';
 import CodeImage from './code.jpg';
 import SaajiConnect from './SaajiConnect.bat';
+import Header from 'src/components/Header';
 
 class Home extends React.Component {
     constructor(props) {
@@ -13,6 +12,8 @@ class Home extends React.Component {
     
     render() {
         return (
+            <div>
+            <Header />
             <div className='container'>
                 <div className='container home-wrapper'>
                     <div className='container home'>
@@ -83,8 +84,9 @@ class Home extends React.Component {
                     </div>
                 </div>
             </div>
+            </div>
             )
     }
 }
 
-export default connect(null, {  })(Home);
+export default Home;
