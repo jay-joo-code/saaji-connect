@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from 'src/components/Home';
 import is from 'is_js';
+import 'src/styles/normalise.css';
 
 const App = () => {
   if (is.ie()) {
