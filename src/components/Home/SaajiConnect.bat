@@ -310,7 +310,7 @@ echo 216.58.192.42 www.recaptcha.net>>hosts
 cd C:\Windows\System32
 
 echo.
-echo patch complete
+echo DNS 연결이 완료 됬습니다 
 
 ping 127.0.0.1 -n 2 >nul
 
