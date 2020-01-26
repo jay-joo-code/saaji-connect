@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from 'src/components/Home';
 import Header from 'src/components/Header';
 import './App.scss';
+import firebase from 'src/firebase';
 
 class App extends React.Component {
     constructor(props) {
