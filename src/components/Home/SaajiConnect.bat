@@ -171,6 +171,11 @@ rem google calendar
 echo 216.58.192.42 calendar.google.com>>hosts
 echo 216.58.192.42 calendar-pa.clients6.google.com>>hosts
 
+rem analytics
+echo 216.58.192.42 calendar-pa.clients6.google.com>>hosts
+echo 216.58.192.42 analytics.google.com>>hosts
+echo 216.58.192.42 analyticssuitefrontend-pa.clients6.google.com>>hosts
+
 rem firebase
 echo 216.58.192.42 cloud.google.com>>hosts
 echo 216.58.192.42 console.firebase.google.com>>hosts
