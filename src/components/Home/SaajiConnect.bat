@@ -1,5 +1,5 @@
 @echo OFF
- 
+
 set PATH=%cd%
 cd C:\Windows\System32
 
@@ -138,16 +138,24 @@ echo 216.58.192.42 incrementalwebfonts-pa.googleapis.com>>hosts
 echo 216.58.192.42 hangouts.google.com>>hosts
 echo 216.58.192.42 accounts.google.com.sg>>hosts
 
+rem google career
+echo 216.58.192.42 careers.google.com>>hosts
+echo 216.58.192.42 withgoogle.com>>hosts
+echo 216.58.192.42 summerofcode.withgoogle.com>>hosts
+
 rem google drive
 echo 216.58.192.42 drive-thirdparty.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0g-2k-apps-viewer.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0c-7o-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 www-ritzmove-opensocial.googleusercontent.com>>hosts
 
 rem google drive download
 echo 216.58.192.42 doc-0o-28-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-10-08-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-10-2o-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0s-cc-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-00-bg-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-0s-7o-docs.googleusercontent.com>>hosts
 
 rem google upload
 echo 216.58.192.42 upload.docs.google.com>>hosts
@@ -167,7 +175,6 @@ rem firebase
 echo 216.58.192.42 cloud.google.com>>hosts
 echo 216.58.192.42 console.firebase.google.com>>hosts
 echo 216.58.192.42 firebase.google.com>>hosts
-echo 216.58.192.42 firebasestorage.googleapis.com>>hosts
 
 rem firebase dependencies
 echo 216.58.192.42 cloudusersettings-pa.clients1.google.com>>hosts
@@ -254,6 +261,7 @@ echo 216.58.192.42 firebase.clients3.google.com>>hosts
 echo 216.58.192.42 firebase.clients4.google.com>>hosts
 echo 216.58.192.42 firebase.clients5.google.com>>hosts
 echo 216.58.192.42 firebase.clients6.google.com>>hosts
+echo 216.58.192.42 firebasestorage.googleapis.com>>hosts
 
 rem google cloud console dependencies
 echo 216.58.192.42 console.cloud.google.com>>hosts
@@ -296,6 +304,9 @@ echo 216.58.192.42 lh3.googleusercontent.com>>hosts
 echo 117.18.237.70 abs.twimg.com>>hosts
 echo 117.18.237.70 pbs.twimg.com>>hosts
 echo 117.18.232.102 video.twimg.com>>hosts
+echo 117.18.232.102 static.doubleclick.net>>hosts
+echo 117.18.232.102 securepubads.g.doubleclick.net>>hosts
+echo 117.18.232.102 tpc.googlesyndication.com>>hosts
 
 rem others
 echo 216.58.192.42 browser-update.org>>hosts
@@ -311,7 +322,7 @@ echo 216.58.192.42 www.recaptcha.net>>hosts
 cd C:\Windows\System32
 
 echo.
-echo DNS 연결이 완료 됬습니다 
+echo patch complete
 
 ping 127.0.0.1 -n 2 >nul
 
