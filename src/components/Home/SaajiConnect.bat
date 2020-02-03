@@ -178,6 +178,9 @@ echo 216.58.192.42 analyticssuitefrontend-pa.clients6.google.com>>hosts
 echo 216.58.192.42 ga-dev-tools.appspot.com>>hosts
 echo 216.58.192.42 content.googleapis.com>>hosts
 
+rem google search
+echo 216.58.192.42 search.google.com>>hosts
+
 rem firebase
 echo 216.58.192.42 cloud.google.com>>hosts
 echo 216.58.192.42 console.firebase.google.com>>hosts
