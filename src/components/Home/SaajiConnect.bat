@@ -157,6 +157,9 @@ echo 216.58.192.42 doc-0s-cc-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-00-bg-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0s-7o-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-00-b0-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-0g-1g-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-0o-2k-apps-viewer.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-0g-7o-docs.googleusercontent.com>>hosts
 
 rem google upload
 echo 216.58.192.42 upload.docs.google.com>>hosts
