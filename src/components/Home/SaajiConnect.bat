@@ -185,6 +185,8 @@ echo 216.58.192.42 analyticssuitefrontend-pa.clients6.google.com>>hosts
 echo 216.58.192.42 ga-dev-tools.appspot.com>>hosts
 echo 216.58.192.42 content.googleapis.com>>hosts
 echo 216.58.192.42 marketingplatform.google.com>>hosts
+echo 216.58.192.42 admin.google.com>>hosts
+echo 216.58.192.42 accounts.google.com>>hosts
 
 rem google search
 echo 216.58.192.42 search.google.com>>hosts
