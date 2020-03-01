@@ -160,6 +160,7 @@ echo 216.58.192.42 doc-00-b0-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0g-1g-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0o-2k-apps-viewer.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0g-7o-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-00-6s-docs.googleusercontent.com>>hosts
 
 rem google upload
 echo 216.58.192.42 upload.docs.google.com>>hosts
@@ -187,6 +188,7 @@ echo 216.58.192.42 content.googleapis.com>>hosts
 echo 216.58.192.42 marketingplatform.google.com>>hosts
 echo 216.58.192.42 admin.google.com>>hosts
 echo 216.58.192.42 accounts.google.com>>hosts
+echo 216.58.192.42 analyticsinsights-pa.clients6.google.com>>hosts
 
 rem google search
 echo 216.58.192.42 search.google.com>>hosts
