@@ -148,6 +148,7 @@ echo 216.58.192.42 drive-thirdparty.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0g-2k-apps-viewer.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0c-7o-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 www-ritzmove-opensocial.googleusercontent.com>>hosts
+echo 216.58.192.42 signaler-pa.clients6.google.com>>hosts
 
 rem google drive download
 echo 216.58.192.42 doc-0o-28-docs.googleusercontent.com>>hosts
