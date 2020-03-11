@@ -25,6 +25,8 @@ const SitesList = ({ v, setV }) => {
       .catch(() => {})
   }, [v])
   
+  console.log('sites', sites);
+  
   return (
     <Container>
     <Content>
