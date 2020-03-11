@@ -9,11 +9,12 @@ const mongoose = require('mongoose');
 
 // MONGODB
 const isProdDb = process.env.NODE_ENV === 'production' && config.DB_PROD;
-const dbType = isProdDb ? 'prod' : 'dev';
 const URI = isProdDb ? config.DB_PROD : config.DB_DEV;
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
+
+const dbType = isProdDb ? 'prod' : 'dev';
 db.once('open', () => {
   console.log('db connection:', dbType)
 });

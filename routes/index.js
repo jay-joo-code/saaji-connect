@@ -11,5 +11,6 @@ router.get('/', (req, res) => {
 router.use('/user', require('./userRouter'));
 router.use('/listing', require('./listingRouter'));
 router.use('/file', require('./fileRouter'));
+router.use('/site', require('./siteRouter'));
 
 module.exports = router;

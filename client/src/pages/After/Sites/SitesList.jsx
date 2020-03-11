@@ -28,7 +28,7 @@ const SitesList = ({ v, setV }) => {
   return (
     <Container>
     <Content>
-      {sites.map((site) => (
+      {sites && sites.length > 0 && sites.map((site) => (
         <Site key={site._id} site={site} v={v} setV={setV} />
       ))}
     </Content>
