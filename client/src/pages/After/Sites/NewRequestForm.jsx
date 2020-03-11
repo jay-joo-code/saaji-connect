@@ -41,12 +41,13 @@ const NewRequestForm = ({ v, setV }) => {
   }
   
   const handleSubmit = () => {
-    if (isNotURL(val) && isNotURL('https://' + val)) {
+    const url = val.includes('http') ? val : 'https://' + val;
+    if (isNotURL(url)) {
       setErr('URL을 정확히 입력해주세요.')  
       return;
     }
     
-    api.post('/site/create', { url: val })
+    api.post('/site/create', { url })
       .then((res) => {
         setV(v + 1);
         setErr('')
