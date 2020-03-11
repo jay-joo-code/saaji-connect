@@ -31,7 +31,7 @@ const Browsers = () => {
           <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/chrome/">
             <BrowserCard icon={ChromeComponent} />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.mozilla.org/en-US/firefox/new/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.mozilla.org/ko/firefox/new/">
             <BrowserCard icon={FirefoxComponent} />
           </a>
         </BrowserContainer>

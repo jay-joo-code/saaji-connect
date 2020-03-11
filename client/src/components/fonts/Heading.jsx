@@ -6,6 +6,7 @@ const Container = styled.h1`
   color: ${props => props.theme.pmy};
   font-weight: bold;
   padding-bottom: .5rem;
+  margin: 0;
 `
 
 const Heading = ({ children, ...rest}) => {

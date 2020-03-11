@@ -18,13 +18,14 @@
     "styled-components": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "react-scripts start",
+    "start": "NODE_ENV=production && react-scripts start",
+    "dev": "NODE_ENV=development && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint" : "eslint --ext .jsx --ext .js src/ --fix"
+    "lint": "eslint --ext .jsx --ext .js src/ --fix"
   },
+  "proxy": "http://localhost:8081",
   "eslintConfig": {
     "extends": "react-app"
   },
