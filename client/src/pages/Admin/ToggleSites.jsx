@@ -5,30 +5,30 @@ import SiteCard from 'src/components/cards/SiteCard';
 
 const Container = styled.div`
 
-`
+`;
 
 const ToggleSites = () => {
   const [sites, setSites] = useState([]);
   const [v, setV] = useState(0);
-  
+
   useEffect(() => {
     api.get('/site')
-      .then((res) => setSites(res.data.filter((site) => !site.solved)))
-  }, [v])
+      .then((res) => setSites(res.data.filter((site) => !site.solved)));
+  }, [v]);
 
   return (
     <Container>
       {sites && sites.map((site) => (
-        <SiteCard 
-          key={site._id} 
-          site={site} 
-          v={v} 
-          setV={setV} 
-          canToggle
+        <SiteCard
+          key={site._id}
+          site={site}
+          v={v}
+          setV={setV}
+          isAdmin
         />
       ))}
     </Container>
-    )
-}
+  );
+};
 
 export default ToggleSites;

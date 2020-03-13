@@ -7,19 +7,17 @@ const Container = styled.p`
   margin: 0;
   
   & > a {
-    color: ${props => props.theme.pmy};
+    color: ${(props) => props.theme.pmy};
     opacity: 1;
     text-decoration: underline;
     cursor: pointer;
   }
-`
+`;
 
-const Body = ({ children, ...rest}) => {
-  return (
-    <Container {...rest}>
-      {children}
-    </Container>
-    )
-}
+const Body = ({ children, ...rest }) => (
+  <Container {...rest}>
+    {children}
+  </Container>
+);
 
 export default Body;

@@ -11,14 +11,12 @@ const Container = styled.div`
     height: 80px;
     width: 80px;
   }
-`
+`;
 
-const BrowserCard = ({ icon }) => {
-  return (
-    <Container>
-      {icon}
-    </Container>
-    )
-}
+const BrowserCard = ({ icon }) => (
+  <Container>
+    {icon}
+  </Container>
+);
 
 export default BrowserCard;

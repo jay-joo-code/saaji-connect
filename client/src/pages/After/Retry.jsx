@@ -8,16 +8,17 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-`
+`;
 
-const Retry = () => {
-  return (
-    <SectionContainer>
+const Retry = () => (
+  <SectionContainer>
     <Container>
-      <Body>다운로드가 안되셨나요? 다운로드 <a href={SaajiConnect} download>다시시도</a></Body>
+      <Body>
+        다운로드가 안되셨나요? 다운로드
+        <a href={SaajiConnect} download>다시시도</a>
+      </Body>
     </Container>
-    </SectionContainer>
-    )
-}
+  </SectionContainer>
+);
 
 export default Retry;

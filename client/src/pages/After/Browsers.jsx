@@ -9,7 +9,7 @@ import { ReactComponent as Firefox } from 'src/assets/browser-icons/firefox.svg'
 
 const Container = styled.div`
 
-`
+`;
 
 const BrowserContainer = styled.div`
   margin-top: 1rem;
@@ -17,12 +17,12 @@ const BrowserContainer = styled.div`
   & > a {
     margin-right: 1rem;
   }
-`
+`;
 
 const Browsers = () => {
-  const ChromeComponent = <Chrome />
+  const ChromeComponent = <Chrome />;
   const FirefoxComponent = <Firefox />;
-  
+
   return (
     <SectionContainer>
       <Container>
@@ -37,7 +37,7 @@ const Browsers = () => {
         </BrowserContainer>
       </Container>
     </SectionContainer>
-    )
-}
+  );
+};
 
 export default Browsers;

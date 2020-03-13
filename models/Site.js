@@ -12,6 +12,20 @@ var siteSchema = Schema({
     required: true,
     default: false
   },
+  cmts: [{
+    text: {
+      type: String,
+      required: true
+    },
+    createdAt: {
+      type: Date,
+      default: () => new Date()
+    },
+    isAdmin: {
+      type: Boolean,
+      default: false
+    }
+  }],
   createdAt: {
     type: Date,
     default: () => new Date()

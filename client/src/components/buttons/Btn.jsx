@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   padding: .3rem .7rem;
-  background: ${props => props.theme.pmy};
+  background: ${(props) => props.theme.pmy};
   color: white;
   opactiy: .9;
   border-radius: 15px;
@@ -13,18 +13,23 @@ const Button = styled.button`
   cursor: pointer;
   
   // color
-  background: ${props => props.color ? props.theme[props.color] : ''};
-`
+  background: ${(props) => (props.color ? props.theme[props.color] : '')};
+  
+  // size
+  font-size: ${(props) => (props.size === 'sm' ? '.6rem' : '')};
+  padding: ${(props) => (props.size === 'sm' ? '.2rem .4rem' : '')};
+`;
 
-const Btn = ({ children, color, ...rest }) => {
-  return (
-    <Button 
-      {...rest}
-      color={color}
-    >
-      {children}
-    </Button>
-    )
-}
+const Btn = ({
+  children, color, size, ...rest
+}) => (
+  <Button
+    {...rest}
+    color={color}
+    size={size}
+  >
+    {children}
+  </Button>
+);
 
 export default Btn;

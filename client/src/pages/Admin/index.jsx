@@ -6,14 +6,12 @@ const Container = styled.div`
   & > input {
     margin-right: 1rem;
   }
-`
+`;
 
-const Admin = () => {
-  return (
-    <Container>
-      <ToggleSites />
-    </Container>
-    )
-}
+const Admin = () => (
+  <Container>
+    <ToggleSites />
+  </Container>
+);
 
 export default Admin;

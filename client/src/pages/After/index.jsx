@@ -12,22 +12,19 @@ const Container = styled.div`
 const Content = styled.div`
   width: 100%;
   
-  @media (min-width: ${props => props.theme.md}px) {
+  @media (min-width: ${(props) => props.theme.md}px) {
     width: 70%;
   }
-`
+`;
 
-const After = () => {
-  
-  return (
-    <Container>
+const After = () => (
+  <Container>
     <Content>
       <Retry />
       <Browsers />
       <Sites />
     </Content>
-    </Container>
-  )
-};
+  </Container>
+);
 
 export default After;
