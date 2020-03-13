@@ -2,11 +2,12 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/env', (req, res) => {
   res.send({
-    active: true,
+    env: process.env.NODE_ENV
   });
 });
+
 
 router.use('/user', require('./userRouter'));
 router.use('/listing', require('./listingRouter'));

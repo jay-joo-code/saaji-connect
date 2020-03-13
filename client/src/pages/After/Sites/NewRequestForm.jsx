@@ -30,8 +30,6 @@ const isNotURL = (string) => {
   }
 }
 
-
-
 const NewRequestForm = ({ v, setV }) => {
   const [val, setVal] = useState('');
   const [err, setErr] = useState();

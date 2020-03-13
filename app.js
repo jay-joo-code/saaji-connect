@@ -8,7 +8,7 @@ const config = require('./config');
 const mongoose = require('mongoose');
 
 // MONGODB
-const isProdDb = process.env.NODE_ENV === 'production' && config.DB_PROD;
+const isProdDb = (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'release') && config.DB_PROD;
 const URI = isProdDb ? config.DB_PROD : config.DB_DEV;
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
