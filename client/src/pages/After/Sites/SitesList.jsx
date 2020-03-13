@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import api from 'src/util/api';
-import Site from './Site';
+import SiteCard from 'src/components/cards/SiteCard';
 
 const Container = styled.div`
   margin: 2rem 0;
@@ -31,7 +31,7 @@ const SitesList = ({ v, setV }) => {
     <Container>
     <Content>
       {sites && sites.length > 0 && sites.map((site) => (
-        <Site key={site._id} site={site} v={v} setV={setV} />
+        <SiteCard key={site._id} site={site} v={v} setV={setV} />
       ))}
     </Content>
     </Container>

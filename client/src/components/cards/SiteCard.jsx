@@ -26,13 +26,12 @@ const DateString = styled(Body)`
   opacity: .7;
 `
 
-const Site = ({ site, v, setV }) => {
+const Site = ({ site, v, setV, canToggle }) => {
   const date = new Date(site.createdAt).toLocaleDateString('en-US', { timeZone: 'UTC' });
   const btnText = site.solved ? '해결' : '대기';
   
   const handleClick = () => {
-    const canEdit = false;
-    if (canEdit) {
+    if (canToggle) {
       api.post(`/site/${site._id}/toggle-solved`)
         .then(() => setV(v + 1))
         .catch(() => {})

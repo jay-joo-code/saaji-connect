@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Btn from 'src/components/buttons/Btn';
+import ToggleSites from './ToggleSites';
 
 const Container = styled.div`
   & > input {
@@ -9,21 +9,9 @@ const Container = styled.div`
 `
 
 const Admin = () => {
-  const [val, setVal] = useState('');
-  
-  const handleChange = (e) => setVal(e.target.value);
-  
-  const handleSubmit = () => {
-    // TODO
-  }
-  
   return (
     <Container>
-      <input
-        value={val}
-        onChange={handleChange}
-      />
-      <Btn onClick={handleSubmit}>verify</Btn>
+      <ToggleSites />
     </Container>
     )
 }
