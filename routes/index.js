@@ -8,7 +8,6 @@ router.get('/env', (req, res) => {
   });
 });
 
-
 router.use('/user', require('./userRouter'));
 router.use('/listing', require('./listingRouter'));
 router.use('/file', require('./fileRouter'));
