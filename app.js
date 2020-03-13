@@ -7,6 +7,8 @@ const cors = require('cors');
 const config = require('./config');
 const mongoose = require('mongoose');
 
+console.log('env: ', process.env.NODE_ENV)
+
 // MONGODB
 const isProdDb = (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'release') && config.DB_PROD;
 const URI = isProdDb ? config.DB_PROD : config.DB_DEV;
