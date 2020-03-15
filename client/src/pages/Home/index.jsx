@@ -11,6 +11,8 @@ const Home = () => {
   const onDownload = () => {
     history.push('/after');
   };
+  
+  console.log('REACT_APP_API', process.env.REACT_APP_API);
 
   return (
     <div>
