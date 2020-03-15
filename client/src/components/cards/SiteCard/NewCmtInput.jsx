@@ -21,7 +21,8 @@ const NewCmtInput = ({
 
   const handleClick = () => {
     const data = { isAdmin, text: value };
-    api.post(`/site/${_id}/cmt/add`, data)
+    const path = `/site/${_id}/cmt/add`;
+    api.post(path, data)
       .then(() => {
         setV(v + 1);
         setValue('');
