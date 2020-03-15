@@ -22,7 +22,9 @@ const SitesList = ({ v, setV }) => {
   useEffect(() => {
     api.get('/site')
       .then((res) => setSites(res.data))
-      .catch(() => {});
+      .catch((e) => {
+        console.log('SitesList', e);
+      });
   }, [v]);
 
   return (

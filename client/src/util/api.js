@@ -3,6 +3,8 @@ import axios from 'axios';
 let URL = '/api';
 
 if (process.env.NODE_ENV !== 'development') {
+  console.log('env is not development. set custom api url')
+  console.log('process.env.CUSTOM_API_URL', process.env.CUSTOM_API_URL);
   URL = process.env.CUSTOM_API_URL;
 }
 
