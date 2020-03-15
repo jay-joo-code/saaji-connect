@@ -42,7 +42,7 @@ siteRouter.post('/:id/cmt/add', async (req, res) => {
   try {
     const { text, isAdmin } = req.body;
     const doc = await Site.findById(req.params.id);
-    const newCmts = [...doc.cmts] || [];
+    const newCmts = (doc.cmts && [...doc.cmts]) || [];
     newCmts.push({
       text,
       isAdmin,

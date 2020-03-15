@@ -24,8 +24,6 @@ const SitesList = ({ v, setV }) => {
       .then((res) => setSites(res.data))
       .catch(() => {});
   }, [v]);
-  
-  console.log('sites', sites);
 
   return (
     <Container>
