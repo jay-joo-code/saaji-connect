@@ -13,7 +13,7 @@ const ToggleSites = () => {
 
   useEffect(() => {
     api.get('/site')
-      .then((res) => setSites(res.data.filter((site) => !site.solved)));
+      .then((res) => setSites(res.data));
   }, [v]);
 
   return (

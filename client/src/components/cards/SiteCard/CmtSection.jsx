@@ -12,7 +12,7 @@ const CmtSection = ({
   site, v, setV, isAdmin,
 }) => (
   <Container>
-    {site.cmts && site.cmts.map((cmt) => (
+    {site && site.cmts && site.cmts.map((cmt) => (
       <Cmt key={cmt.createdAt} cmt={cmt} />
     ))}
     <NewCmtInput

@@ -24,11 +24,13 @@ const SitesList = ({ v, setV }) => {
       .then((res) => setSites(res.data))
       .catch(() => {});
   }, [v]);
+  
+  console.log('sites', sites);
 
   return (
     <Container>
       <Content>
-        {sites && sites.length > 0 && sites.map((site) => (
+        {sites && sites.map((site) => (
           <SiteCard key={site._id} site={site} v={v} setV={setV} />
         ))}
       </Content>

@@ -93,31 +93,37 @@ echo 216.58.192.42 passwords.google.com>>hosts
 echo 216.58.192.42 ogs.google.com>>hosts
 echo 216.58.192.42 apis.google.com>>hosts
 echo 216.58.192.42 clients.l.google.com>>hosts
+
 echo 216.58.192.42 client1.google.com>>hosts
 echo 216.58.192.42 client2.google.com>>hosts
 echo 216.58.192.42 client3.google.com>>hosts
 echo 216.58.192.42 client4.google.com>>hosts
 echo 216.58.192.42 client5.google.com>>hosts
 echo 216.58.192.42 client6.google.com>>hosts
+
 echo 216.58.192.42 clients1.google.com>>hosts
 echo 216.58.192.42 clients2.google.com>>hosts
 echo 216.58.192.42 clients3.google.com>>hosts
 echo 216.58.192.42 clients4.google.com>>hosts
 echo 216.58.192.42 clients5.google.com>>hosts
 echo 216.58.192.42 clients6.google.com>>hosts
+
 echo 216.58.192.42 googlehosted.l.googleusercontent.com>>hosts
+
 echo 216.58.192.42 clients1.googleusercontent.com>>hosts
 echo 216.58.192.42 clients2.googleusercontent.com>>hosts
 echo 216.58.192.42 clients3.googleusercontent.com>>hosts
 echo 216.58.192.42 clients4.googleusercontent.com>>hosts
 echo 216.58.192.42 clients5.googleusercontent.com>>hosts
 echo 216.58.192.42 clients6.googleusercontent.com>>hosts
+
 echo 216.58.192.42 ih1.googleusercontent.com>>hosts
 echo 216.58.192.42 ih2.googleusercontent.com>>hosts
 echo 216.58.192.42 ih3.googleusercontent.com>>hosts
 echo 216.58.192.42 ih4.googleusercontent.com>>hosts
 echo 216.58.192.42 ih5.googleusercontent.com>>hosts
 echo 216.58.192.42 ih6.googleusercontent.com>>hosts
+
 echo 216.58.192.42 notifications.google.com>>hosts
 echo 216.58.192.42 chrome-devtools-frontend.appspot.com>>hosts
 echo 216.58.192.42 googleapis.l.google.com>>hosts
@@ -127,12 +133,21 @@ echo 216.58.192.42 plus.google.com>>hosts
 echo 216.58.192.42 books.google.com>>hosts
 echo 216.58.192.42 books.google.co.kr>>hosts
 echo 216.58.192.42 maps.googleapis.com>>hosts
+
 echo 216.58.192.42 lh1.googleusercontent.com>>hosts
 echo 216.58.192.42 lh2.googleusercontent.com>>hosts
 echo 216.58.192.42 lh3.googleusercontent.com>>hosts
 echo 216.58.192.42 lh4.googleusercontent.com>>hosts
 echo 216.58.192.42 lh5.googleusercontent.com>>hosts
 echo 216.58.192.42 lh6.googleusercontent.com>>hosts
+
+echo 216.58.192.42 lh1.google.com>>hosts
+echo 216.58.192.42 lh2.google.com>>hosts
+echo 216.58.192.42 lh3.google.com>>hosts
+echo 216.58.192.42 lh4.google.com>>hosts
+echo 216.58.192.42 lh5.google.com>>hosts
+echo 216.58.192.42 lh6.google.com>>hosts
+
 echo 216.58.192.42 maps.gstatic.com>>hosts
 echo 216.58.192.42 incrementalwebfonts-pa.googleapis.com>>hosts
 echo 216.58.192.42 hangouts.google.com>>hosts
@@ -165,6 +180,8 @@ echo 216.58.192.42 doc-0g-1g-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0o-2k-apps-viewer.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-0g-7o-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-00-6s-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-04-1g-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-10-1g-docs.googleusercontent.com>>hosts
 
 rem google upload
 echo 216.58.192.42 upload.docs.google.com>>hosts

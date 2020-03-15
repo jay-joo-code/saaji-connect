@@ -40,7 +40,7 @@ const Meta = styled.div`
 
 const CmtIcon = styled(CmtIconRaw)`
   height: .8rem;
-  width: .8rem;
+  width: .9rem;
 `;
 
 const Url = styled(Body)`
@@ -75,7 +75,7 @@ const Site = ({
           <Meta onClick={() => setExpand(!expand)}>
             <Muted>{date}</Muted>
             <CmtIcon />
-            <Muted>{site.cmts.length || 0}</Muted>
+            <Muted>{(site.cmts && site.cmts.length) || 0}</Muted>
           </Meta>
         </Col>
         <Btn
@@ -85,7 +85,7 @@ const Site = ({
           {btnText}
         </Btn>
       </Row>
-      {expand && (
+      {expand && site && (
         <CmtSection
           site={site}
           v={v}
