@@ -23,7 +23,7 @@ const ErrMsg = styled(Body)`
 
 const isNotURL = (string) => {
   try {
-    URL(string);
+    new URL(string);
     return false;
   } catch (_) {
     return true;

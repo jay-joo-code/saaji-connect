@@ -354,6 +354,8 @@ echo 117.18.232.102 tpc.googlesyndication.com>>hosts
 rem others
 echo 216.58.192.42 browser-update.org>>hosts
 echo 216.58.192.42 imasdk.googleapis.com>>hosts
+echo 216.58.192.42 tracking.sweettracker.co.kr:9090>>hosts
+echo 216.58.192.42 tracking.sweettracker.co.kr>>hosts
 
 rem mongodb atlas
 echo 216.58.192.42 bizible.com>>hosts
