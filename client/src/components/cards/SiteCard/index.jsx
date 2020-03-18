@@ -55,11 +55,15 @@ const Site = ({
   site, v, setV, isAdmin,
 }) => {
   const date = formatDate(site.createdAt);
-  const btnText = site.solved ? '해결' : '대기';
+  
+  const states = ['대기', '해결', '불가'];
+  const colors = ['warning', 'success', 'danger'];
+  const btnText = states[site.state];
+  const color = colors[site.state];
 
   const handleClick = () => {
     if (isAdmin) {
-      api.post(`/site/${site._id}/toggle-solved`)
+      api.post(`/site/${site._id}/toggle-state`)
         .then(() => setV(v + 1))
         .catch(() => {});
     }
@@ -79,7 +83,7 @@ const Site = ({
           </Meta>
         </Col>
         <Btn
-          color={site.solved ? 'success' : 'danger'}
+          color={color}
           onClick={handleClick}
         >
           {btnText}

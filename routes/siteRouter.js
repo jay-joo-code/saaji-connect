@@ -27,10 +27,11 @@ siteRouter.get('/', async (req, res) => {
   }
 });
 
-siteRouter.post('/:id/toggle-solved', async (req, res) => {
+siteRouter.post('/:id/toggle-state', async (req, res) => {
   try {
     const doc = await Site.findById(req.params.id);
-    doc.solved = !doc.solved;
+    doc.solved = undefined;
+    doc.state = (doc.state + 1) % 3;
     const result = await doc.save();
     res.send(result);
   } catch (e) {

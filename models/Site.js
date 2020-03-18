@@ -8,9 +8,12 @@ var siteSchema = Schema({
     required: true,
   },
   solved: { 
-    type: Boolean,
+    type: Boolean
+  },
+  state: { // 0 - 대기, 1 - 해결, 2 - 불가
+    type: String,
     required: true,
-    default: false
+    default: 0
   },
   cmts: {
     type: [{
