@@ -31,6 +31,8 @@ echo.>>hosts
 @echo OFF
 rem user requests
 echo 216.58.192.42 translate.readingsnail.pe.kr>>hosts
+echo 216.58.192.42 id.google.co.kr>>hosts
+echo 216.58.192.42 gmail.google.com>>hosts
 
 rem google dns
 echo 216.58.192.42 www.google.co.kr>>hosts
