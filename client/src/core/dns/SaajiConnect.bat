@@ -160,6 +160,7 @@ rem google career
 echo 216.58.192.42 careers.google.com>>hosts
 echo 216.58.192.42 withgoogle.com>>hosts
 echo 216.58.192.42 summerofcode.withgoogle.com>>hosts
+echo 216.58.192.42 appengine.google.com>>hosts
 
 rem google play music
 echo 216.58.192.42 play-music.gstatic.com>>hosts
@@ -185,6 +186,7 @@ echo 216.58.192.42 doc-0g-7o-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-00-6s-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-04-1g-docs.googleusercontent.com>>hosts
 echo 216.58.192.42 doc-10-1g-docs.googleusercontent.com>>hosts
+echo 216.58.192.42 doc-0c-0k-docs.googleusercontent.com>>hosts
 
 rem google upload
 echo 216.58.192.42 upload.docs.google.com>>hosts

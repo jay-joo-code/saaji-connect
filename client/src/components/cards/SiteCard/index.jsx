@@ -45,6 +45,8 @@ const CmtIcon = styled(CmtIconRaw)`
 
 const Url = styled(Body)`
   font-weight: bold;
+  flex-shrink: 1;
+  white-space: pre-line;
 `;
 
 const Muted = styled(Body)`

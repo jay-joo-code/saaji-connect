@@ -11,6 +11,7 @@ const Button = styled.button`
   border: none;
   font-size: .8rem;
   cursor: pointer;
+  flex-shrink: 0;
   
   // color
   background: ${(props) => (props.color ? props.theme[props.color] : '')};
