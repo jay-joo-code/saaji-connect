@@ -47,6 +47,8 @@ const Url = styled(Body)`
   font-weight: bold;
   flex-shrink: 1;
   white-space: pre-line;
+  word-wrap: break-word;
+  
 `;
 
 const Muted = styled(Body)`
