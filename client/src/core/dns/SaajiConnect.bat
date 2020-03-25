@@ -158,6 +158,12 @@ echo 216.58.192.42 incrementalwebfonts-pa.googleapis.com>>hosts
 echo 216.58.192.42 hangouts.google.com>>hosts
 echo 216.58.192.42 accounts.google.com.sg>>hosts
 
+rem gdocs add ons
+echo 216.58.192.42 gsuite.google.com>>hosts
+echo 216.58.192.42 youtube.googleapis.com>>hosts
+echo 216.58.192.42 script.google.com>>hosts
+echo 216.58.192.42 n-tfplcujpg5gnkuyjbc3xr2y5j3d2htthjknqguq-0lu-script.googleusercontent.com>>hosts
+
 rem google career
 echo 216.58.192.42 careers.google.com>>hosts
 echo 216.58.192.42 withgoogle.com>>hosts
